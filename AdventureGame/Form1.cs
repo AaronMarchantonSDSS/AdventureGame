@@ -550,7 +550,7 @@ namespace AdventureGame
 
                     Refresh();
                     Thread.Sleep(5000);
-
+                      
                     optionButton1.Visible = true;
                     optionButton2.Visible = true;
                     optionButton1.Enabled = true;
