@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAA14BB4-E9B0-4EB4-B904-BB941E841820}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AdventureGame</RootNamespace>
+    <AssemblyName>AdventureGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page100Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page1Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page2Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page3Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page4Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page5Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page6Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page7Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page8Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page9Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page10Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page11Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page12Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page13Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page14Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page15Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page16Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page17Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page18Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page19Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page20Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page21Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page22Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page23Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page24Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page25Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page26Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page27Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page28Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page29Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page30Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page31Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page32Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page33Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page34Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page35Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page36Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page37Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page38Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page39Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page99Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drivingSound.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talkingSound.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walkingSound.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bangingSound.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bangingSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drivingSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gunSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loseSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\runningSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talkingSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\themeSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walkingSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombieSound.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
