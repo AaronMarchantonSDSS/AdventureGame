@@ -248,5 +248,8 @@
   <ItemGroup>
     <None Include="Resources\zombieSound.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mi7hwvxutql41.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

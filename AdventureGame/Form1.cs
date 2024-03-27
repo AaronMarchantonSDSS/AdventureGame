@@ -755,7 +755,7 @@ namespace AdventureGame
                     optionButton2.Text = "Judge the legitamacy of the city";
 
                     outputLabel.Text = "You reach the walls of the city. What do you do?";
-                    imageLabel.Image = Properties.Resources.page22Image;
+                    imageLabel.Image = Properties.Resources.page37Image;
 
                     banging.Play();
                     break;

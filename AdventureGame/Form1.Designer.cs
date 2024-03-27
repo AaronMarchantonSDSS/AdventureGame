@@ -35,9 +35,9 @@
             this.proceedButton = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
             this.imageLabel = new System.Windows.Forms.Label();
             this.logoLabel = new System.Windows.Forms.Label();
-            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // optionButton1
@@ -132,6 +132,23 @@
             this.titleLabel.TabIndex = 5;
             this.titleLabel.Text = "Apocalypse Adventure Game ";
             // 
+            // closeButton
+            // 
+            this.closeButton.Enabled = false;
+            this.closeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.closeButton.FlatAppearance.BorderSize = 2;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.closeButton.Location = new System.Drawing.Point(426, 277);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(295, 60);
+            this.closeButton.TabIndex = 8;
+            this.closeButton.Text = "Close Game";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Visible = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // imageLabel
             // 
             this.imageLabel.BackColor = System.Drawing.Color.Black;
@@ -156,23 +173,6 @@
             this.logoLabel.Size = new System.Drawing.Size(173, 45);
             this.logoLabel.TabIndex = 6;
             // 
-            // closeButton
-            // 
-            this.closeButton.Enabled = false;
-            this.closeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.closeButton.FlatAppearance.BorderSize = 2;
-            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.closeButton.Location = new System.Drawing.Point(426, 277);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(295, 60);
-            this.closeButton.TabIndex = 8;
-            this.closeButton.Text = "Close Game";
-            this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Visible = false;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,6 +188,7 @@
             this.Controls.Add(this.optionButton3);
             this.Controls.Add(this.optionButton2);
             this.Controls.Add(this.optionButton1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Walking Dead With Cannibals";
             this.ResumeLayout(false);
