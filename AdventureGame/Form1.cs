@@ -439,9 +439,11 @@ namespace AdventureGame
                 case 12:
                     optionButton1.Visible = false;
                     optionButton2.Visible = false;
+                    optionButton3.Visible= false;
                     proceedButton.Visible = true;
                     optionButton1.Enabled = false;
                     optionButton2.Enabled = false;
+                    optionButton3.Enabled= false;
                     proceedButton.Enabled = true;
 
                     outputLabel.Text = "You stay at home but eventually run out of food and starve to Death.\n\nYou Die!";
