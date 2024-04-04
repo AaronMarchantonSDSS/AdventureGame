@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Aaron Marchanton
+//March 6, 2024
+//Walking Dead Themed Adventure Game
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,9 +20,9 @@ namespace AdventureGame
     {
         int page = 1;
 
-        Random randGen = new Random();
+        Random randGen = new Random(); //creating a random number generator
 
-        SoundPlayer gun = new SoundPlayer(Properties.Resources.gunSound);
+        SoundPlayer gun = new SoundPlayer(Properties.Resources.gunSound); //creating global sound variables
         SoundPlayer lose = new SoundPlayer(Properties.Resources.loseSound);
         SoundPlayer theme = new SoundPlayer(Properties.Resources.themeSound);
         SoundPlayer win = new SoundPlayer(Properties.Resources.winSound);
@@ -30,13 +34,13 @@ namespace AdventureGame
         SoundPlayer banging = new SoundPlayer(Properties.Resources.bangingSound);
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); //play sound
             theme.Play();
 
         }
         private void optionButton1_Click(object sender, EventArgs e)
         {
-            if (page == 1)
+            if (page == 1) //cases for switching the page on button1 press
             {
                 page = 2;
             }
@@ -94,9 +98,9 @@ namespace AdventureGame
             }
             else if (page == 23)
             {
-                int randValue = randGen.Next(1, 101);
+                int randValue = randGen.Next(1, 101); //choose a random number between 1 and 100
 
-                if (randValue <= 70)
+                if (randValue <= 70) //choose the next page based on the random number
                 {
                     page = 27;
                 }
@@ -136,7 +140,7 @@ namespace AdventureGame
 
         private void optionButton2_Click(object sender, EventArgs e)
         {
-            if (page == 1)
+            if (page == 1) //changing pages based on option button2 push
             {
                 page = 1;
             }
@@ -231,7 +235,7 @@ namespace AdventureGame
 
         private void optionButton3_Click(object sender, EventArgs e)
         {
-            if (page == 8)
+            if (page == 8) //if option button three is in use this will change the page
             {
                 page = 11;
             }
@@ -254,7 +258,7 @@ namespace AdventureGame
 
         private void proceedButton_Click(object sender, EventArgs e)
         {
-            if (page == 1)
+            if (page == 1) //will change the page to and from the lobby as well as the death and win screen upon press
             {
                 page = 2;
             }
@@ -289,12 +293,12 @@ namespace AdventureGame
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); //closes the program
         }
 
         private void displayPage()
         {
-            switch (page)
+            switch (page) //each case represents a different page and sets the appropriate images, buttons, sounds and text for that page. 
             {
                 case 1:
                     proceedButton.Location = new Point(253, 277);
@@ -310,7 +314,7 @@ namespace AdventureGame
                     proceedButton.Enabled = true;
                     closeButton.Enabled = false;
 
-                    outputLabel.Text = "Welcome to the Apocalypse Survival Game.\nYour goal is simple ... SURVIVE.\nThe rules are simple each round you will choose exactly what it is you want to do.\nGood Luck.";
+                    outputLabel.Text = "Welcome to the Apocalypse Survival Game.\nYour goal is simple ... SURVIVE.\nThe rules are simple each round you will choose exactly what it is you want to do.\nGood Luck."; //change the story text
                     imageLabel.Image = Properties.Resources.page1Image;
 
                     theme.Play();
